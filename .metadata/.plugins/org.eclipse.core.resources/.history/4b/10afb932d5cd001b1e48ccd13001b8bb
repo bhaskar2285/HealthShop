@@ -1,0 +1,28 @@
+package com.healthshop;
+
+
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.healthshop.common.entity.Product;
+import com.healthshop.product.ProductService;
+
+@Controller
+public class MainController {
+       @GetMapping("")
+       public String viewHomePage () {
+    	   
+    	Model model = null;
+    	ProductService service;
+   		List<Product> listProducts = service.listAll();
+		
+		
+   		model.addAttribute("listProducts",listProducts);
+   		
+   		return "products";
+       }
+}

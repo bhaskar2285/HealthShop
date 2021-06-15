@@ -1,0 +1,5 @@
+package com.healthshop.admin.user;
+
+public class UserController {
+
+}

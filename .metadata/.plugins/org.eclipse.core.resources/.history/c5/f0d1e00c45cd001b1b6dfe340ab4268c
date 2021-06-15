@@ -1,0 +1,26 @@
+package com.healthshop.admin.brand;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.healthshop.admin.category.Category;
+import com.healthshop.admin.category.CategoryService;
+
+public class BrandController {
+	@Autowired
+	private BrandService service;
+	
+	@GetMapping("/brands")
+	public String listAll(Model model) {
+		List<Brand> listCategory = service.listAll();
+		
+		
+		model.addAttribute("listBrands",listBrands);
+		
+		return "brands/brands";
+		
+	}
+}

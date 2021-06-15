@@ -1,0 +1,5 @@
+package com.healthshop.common.entity;
+
+public class Role {
+
+}

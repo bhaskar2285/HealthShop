@@ -1,0 +1,16 @@
+package com.healthshop.common.entity;
+
+@Entity
+@Table(name = "users")
+public class User {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer Id;
+	private String email;
+	private String password;
+	private String firstName;
+	private String lastName;
+	private String photos;
+	private boolean enabled;
+
+}

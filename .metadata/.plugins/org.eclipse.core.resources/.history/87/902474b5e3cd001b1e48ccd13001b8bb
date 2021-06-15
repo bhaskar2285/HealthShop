@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta  name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+   <title>Home - HealthShop</title>
+
+   <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+   <script type= "text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+   <script type= "text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<div class="container-fluid">
+     <div>
+         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+             <a class="navbar-brand" th:ref="@{/}">
+                 <img th:src="@{/images/healthshop.png}"/>
+             </a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar">
+		            <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="topNavbar">
+                 <ul class="navbar-nav">
+                     <li class="nav-item">
+                         <a class="nav-link" th:href="@{/login}">Login</a>                     
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" th:href="@{/register}">Register</a>                     
+                     </li>  
+                                            
+                 </ul>
+             
+             </div>
+             
+         </nav>
+         
+     </div>
+     <div class=text-center>
+       <h1>Welcome to Health Shop-Online Medical Store</h1>
+     </div>
+     <div>
+       <h2>Products</h2>
+     </div>
+     <div>
+         <table class="table table-bordered table-striped  table-hover table-reponsive-xl">
+             <thead class="thead-dark">
+                  <tr>
+                      <th>Product ID</th>
+                      <th>Photos</th>
+                      <th>Product Name</th>
+                      <th>Description</th>
+                      <th>Brand Name</th>
+                      <th>Price (Rs.)</th>
+                      <th>Add To Cart</th>
+                      
+                  </tr>                   
+             </thead>
+             <tbody>
+                  <tr th:each="product:${listProducts}">
+                      <td>[[${product.Id}]]</td>
+ 
+                      <td><img th:src="@{${product.Photos}}" /></td>
+                      <td>[[${product.alias}]]</td>
+                      <td>[[${product.description}]]</td>
+                      <td>[[${product.name}]]</td>
+                      <td>[[${product.price}]]</td>
+                      <td>
+                          <button name="add to cart" value="Add to Cart" type="button" onclick="/index/cart">Add To Cart</button>
+                      </td>
+                                            
+                                      
+                      
+                      
+                  </tr>      
+             </tbody>
+         </table>
+     </div>    
+     
+     <div class=text-center>
+         <p>CopyRight Notice-2021 &copy;HealthShop</p>
+     </div>
+     
+</div>
+   
+</body>
+</html>

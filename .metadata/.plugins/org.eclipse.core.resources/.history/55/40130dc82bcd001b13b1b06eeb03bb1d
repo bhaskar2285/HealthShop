@@ -1,0 +1,7 @@
+package com.healthshop.admin.category;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public class CategoryRepository implements JpaRepository<T, ID> {
+
+}
