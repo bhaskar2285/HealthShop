@@ -7838,3 +7838,15 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.eclipse.lsp4e 4 0 2021-06-16 02:50:07.063
 !MESSAGE [Error]	No config file for d:\HealthShop\HealthShopProject\HealthShopWebParent\HealthShopBackEnd\src\main\resources\templates\users.html
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-16 02:54:57.189
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.uuUhaxUO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-16 02:54:57.191
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.uuUhaxUO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-16 02:54:57.193
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-16 02:54:57.194
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.uuUhaxUO => OK

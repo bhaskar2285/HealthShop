@@ -7,4 +7,8 @@
     <fullyQualifiedTypeName name="com.healthshop.admin.category.Category"/>
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
     <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="com.healthshop.common.entity.Category"/>
+    <fullyQualifiedTypeName name="com.healthshop.common.entity.Role"/>
+    <fullyQualifiedTypeName name="com.healthshop.common.entity.User"/>
+    <fullyQualifiedTypeName name="com.healthshop.product.ProductService"/>
 </qualifiedTypeNameHistroy>
